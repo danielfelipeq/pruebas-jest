@@ -2,7 +2,7 @@ const createRobot = (x, y) => {
   x = x;
   y = y;
   return {
-    moveUp: (x, y) => {
+    moveUp: () => {
       y += 1;
       if (y >= 0 && y <= 10) {
         return [x, y];
@@ -10,7 +10,7 @@ const createRobot = (x, y) => {
         return "ERROR";
       }
     },
-    moveDown: (x, y) => {
+    moveDown: () => {
       y -= 1;
       if (y >= 0 && y <= 10) {
         return [x, y];
@@ -18,7 +18,7 @@ const createRobot = (x, y) => {
         return "ERROR";
       }
     },
-    moveLeft: (x, y) => {
+    moveLeft: () => {
       x -= 1;
       if (x >= 0 && x <= 10) {
         return [x, y];
@@ -26,7 +26,7 @@ const createRobot = (x, y) => {
         return "ERROR";
       }
     },
-    moveRight: (x, y) => {
+    moveRight: () => {
       x += 1;
       if (x >= 0 && x <= 10) {
         return [x, y];
@@ -34,14 +34,14 @@ const createRobot = (x, y) => {
         return "ERROR";
       }
     },
-    getX: (x, y) => {
+    getX: () => {
       if (x >= 0 && x <= 10) {
         return x;
       } else {
         return "ERROR";
       }
     },
-    getY: (x, y) => {
+    getY: () => {
       if (y >= 0 && y <= 10) {
         return y;
       } else {
@@ -50,10 +50,4 @@ const createRobot = (x, y) => {
     },
   };
 };
-const robot = createRobot();
-
-module.exports = robot;
-
-console.log(robot.moveUp(10, 9));
-console.log(robot.moveLeft(4, 9));
-console.log(robot.getY(8, 5));
+module.exports = createRobot;
