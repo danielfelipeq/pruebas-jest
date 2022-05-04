@@ -1,0 +1,22 @@
+{
+  "name": "pruebas-jest",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas con Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielfelipeq/pruebas-jest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielfelipeq/pruebas-jest/issues"
+  },
+  "homepage": "https://github.com/danielfelipeq/pruebas-jest#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
